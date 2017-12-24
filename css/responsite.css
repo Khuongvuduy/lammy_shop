@@ -1,0 +1,48 @@
+
+@media only screen and (max-width: 1199px) {
+
+}
+@media only screen and (max-width: 991px) {
+    .nav_menu {
+        margin-bottom: 20px;
+    }.header-service {
+         display: none;
+     }.header-service {
+         display: none;
+     }
+}
+
+@media only screen and (max-width: 767px) {
+
+    #footer .col-xs-12{
+        padding-bottom: 10px;    }
+    .wp_img {
+        display: none;
+    }
+    .list-footer{display: none;}
+    .wp-thumb img {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .phone-box, .cart-box {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 414px) {
+
+}
+
+@media only screen and (max-width: 375px) {
+
+}
+
+@media only screen and (max-width: 360px) {
+
+}
+
+@media only screen and (max-width: 320px) {
+
+}

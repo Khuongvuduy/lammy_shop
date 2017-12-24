@@ -1,0 +1,34 @@
+.widget .item {
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 1px;
+}
+
+.owl-buttons {
+    position: absolute;
+    right: 0;
+    top: -57px;
+    background: #fff;
+}
+
+.owl-theme .owl-controls {
+    margin-top: 10px;
+    text-align: center;
+}
+.owl-theme .owl-controls .owl-buttons div {
+    color: #FFF;
+    display: inline-block;
+    zoom: 1;
+    *display: inline; /*IE7 life-saver */
+    margin: 5px;
+    padding: 3px 10px;
+    font-size: 16px;
+    background: #869791;
+    filter: Alpha(Opacity=50); /*IE7 fix*/
+    opacity: 0.5;
+}
+.owl-theme .owl-controls .owl-buttons div:hover{
+    background: pink;
+}
+#owl-demo .owl-buttons {
+}

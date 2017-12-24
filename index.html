@@ -1,0 +1,940 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lamy shop</title>
+    <link rel="icon" href="images/logo-white.png" type="image/gif" >
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="css/reset.css" rel="stylesheet" type="text/css"/>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+    <link href="css/owl.carousel.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/owl.css">
+    <link rel="stylesheet" href="css/responsite.css">
+</head>
+<body>
+<div id="wrapper">
+    <div class="wp-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-4">
+                    <div class="phone"><a href=""><i class="icon-phone fa fa-phone" aria-hidden="true"></i></a>
+                        <div class="phone-box"><p><span class="ft_web">Hỗ trợ:</span></p> 0966039806</div>
+                    </div>
+                </div>
+                <!---->
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-4 text-center">
+                    <!-- Header Logo -->
+                    <div class="logo">
+                        <a title="Lamy" href="/">
+                            <img alt="Lamy" src="images/logo.png?1511863085640">
+                        </a>
+                    </div>
+                    <!-- End Header Logo -->
+                </div>
+                <!---->
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-4">
+                    <div class="wp_cart">
+                        <!-- Top Cart -->
+                        <div class="mini-cart">
+                            <a href=""><i class="icon-phone fa fa-shopping-cart"></i>
+                                <div class="cart-box">
+                                    <span class="ft_web">Giỏ hàng</span>
+                                    <span id="cart-total">
+                                    <b>0</b> sản phẩm
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- Top Cart -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!---->
+    <nav class="navbar navbar-default nav_menu">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed pull-left" data-toggle="collapse"
+                        data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <!--<a class="navbar-brand" href="#">Brand</a>-->
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li><a href="#">Trang chủ</a></li>
+                    <li><a href="#">Giới thiệu</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                           aria-expanded="false">Sản phẩm<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Separated link</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">One more separated link</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Tin tức</a></li>
+                    <li><a href="#">Liên hệ</a></li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+            <div class="wp-search">
+                <form id="search">
+                    <input name="q" placeholder="Tìm hiếm" type="text">
+                    <button><i class="fa fa-search"></i></button>
+                    <!--<input type="submit" value="" name="sb_search"/>-->
+                </form>
+            </div>
+        </div><!-- /.container-fluid -->
+    </nav>
+    <!--header-service-->
+    <div class="header-service">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
+                    <a href="">
+                        <i class="fa fa-truck" aria-hidden="true"></i>
+                        Giao hàng miễn phí
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
+                    <a href="">
+                        <i class="fa fa-comments-o" aria-hidden="true"></i>
+                        Hỗ trợ khách hàng 24/7
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
+                    <a href="">
+                        <i class="fa fa-money" aria-hidden="true"></i>
+                        Hoàn trả tiền trong 3 ngày
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                    <a href="">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        Giảm giá theo đơn hàng
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--wp-content-->
+    <div id="wp-content" class="container clearfix">
+        <div id="content" class="">
+            <div class="slider">
+                <div class="row">
+                    <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                            <!-- Indicators -->
+                            <ol class="carousel-indicators">
+                                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                                <li data-target="#myCarousel" data-slide-to="1"></li>
+                                <li data-target="#myCarousel" data-slide-to="2"></li>
+                            </ol>
+
+                            <!-- Wrapper for slides -->
+                            <div class="carousel-inner">
+                                <div class="item active">
+                                    <img src="images/slide-img.jpg" alt="Los Angeles" class="img-responsive">
+                                </div>
+
+                                <div class="item">
+                                    <img src="images/slide-img2.jpg" alt="Chicago" class="img-responsive">
+                                </div>
+
+                                <div class="item">
+                                    <img src="images/slide-img3.jpg" alt="New York" class="img-responsive">
+                                </div>
+                            </div>
+
+                            <!-- Left and right controls -->
+                            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                                <span class="glyphicon glyphicon-chevron-left"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                                <span class="glyphicon glyphicon-chevron-right"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                        <div class="wp_img">
+                            <a href=""><img src="images/rhs-banner.jpg" alt="" class="img-responsive"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--end slide-->
+            <!-- Hàng mới về-->
+            <div class="widget">
+                <div class="widget-title">
+                    <span class="new-title">Hàng mới về</span>
+                </div>
+                <div class="widget-detail">
+                    <div class="owl-widget owl-carousel owl-theme">
+                        <div class="item">
+                            <div class="list-product text-center">
+                                <a href="" class="wp-thumb">
+                                    <img src="images/aokhoac.jpg" alt="áo" class="img-responsive">
+                                </a>
+                                <div class="wp-pro">
+                                    <h3><a href="">Áo dạ vàng lửng Asos</a></h3>
+                                    <div class="price">150.000đ<span class="price2">350.000đ</span></div>
+
+                                    <a href="" class="btn btn-default app-cart">
+                                        <i class="fa fa-shopping-cart" aria-hidden="true"></i> giỏ hàng
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!---->
+                        <div class="item">
+                            <div class="list-product text-center">
+                                <a href="" class="wp-thumb">
+                                    <img src="images/aosomi_002.jpg" alt="áo" class="img-responsive">
+                                </a>
+                                <div class="wp-pro">
+                                    <h3><a href="">Áo sơ mi dáng rộng</a></h3>
+                                    <div class="price">560.000đ</div>
+
+                                    <a href="" class="btn btn-default app-cart">
+                                        <i class="fa fa-shopping-cart" aria-hidden="true"></i> giỏ hàng
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!---->
+                        <div class="item">
+                            <div class="list-product text-center">
+                                <a href="" class="wp-thumb">
+                                    <img src="images/aoni2_002.jpg" alt="áo" class="img-responsive">
+                                </a>
+                                <div class="wp-pro">
+                                    <h3><a href="">Áo nỉ thêu hình Asos</a></h3>
+                                    <div class="price">Liên hệ</div>
+
+                                    <a href="" class="btn btn-default app-cart">
+                                        <i class="fa fa-shopping-cart" aria-hidden="true"></i> giỏ hàng
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!---->
+                        <div class="item">
+                            <div class="list-product text-center">
+                                <a href="" class="wp-thumb">
+                                    <img src="images/dammaxi2.jpg" alt="áo" class="img-responsive">
+                                </a>
+                                <div class="wp-pro">
+                                    <h3><a href="">Váy đầm maxi BCBD</a></h3>
+                                    <div class="price">1.249.000đ</div>
+
+                                    <a href="" class="btn btn-default app-cart">
+                                        <i class="fa fa-shopping-cart" aria-hidden="true"></i> giỏ hàng
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- -->
+                        <div class="item">
+                            <div class="list-product text-center">
+                                <a href="" class="wp-thumb">
+                                    <img src="images/damxoe2.jpg" alt="áo" class="img-responsive">
+                                </a>
+                                <div class="wp-pro">
+                                    <h3><a href="">Váy đầm xòe Asos</a></h3>
+                                    <div class="price">859.000đ</div>
+
+                                    <a href="" class="btn btn-default app-cart">
+                                        <i class="fa fa-shopping-cart" aria-hidden="true"></i> giỏ hàng
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!---->
+                        <div class="item">
+                            <div class="list-product text-center">
+                                <a href="" class="wp-thumb">
+                                    <img src="images/vayxoe_002.jpg" alt="áo" class="img-responsive">
+                                </a>
+                                <div class="wp-pro">
+                                    <h3><a href="">Chân váy Xòe Aoso</a></h3>
+                                    <div class="price">320.000đ</div>
+
+                                    <a href="" class="btn btn-default app-cart">
+                                        <i class="fa fa-shopping-cart" aria-hidden="true"></i> giỏ hàng
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!---->
+                        <div class="item">
+                            <div class="list-product text-center">
+                                <a href="" class="wp-thumb">
+                                    <img src="images/damsuong_002.jpg" alt="áo" class="img-responsive">
+                                </a>
+                                <div class="wp-pro">
+                                    <h3><a href="">Váy đầm suông Asos</a></h3>
+                                    <div class="price">549.000đ</div>
+
+                                    <a href="" class="btn btn-default app-cart">
+                                        <i class="fa fa-shopping-cart" aria-hidden="true"></i> giỏ hàng
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!---->
+                        <div class="item">
+                            <div class="list-product text-center">
+                                <a href="" class="wp-thumb">
+                                    <img src="images/vaybutchi_002.jpg" alt="áo" class="img-responsive">
+                                </a>
+                                <div class="wp-pro">
+                                    <h3><a href="">Chân váy bút chì Asos</a></h3>
+                                    <div class="price">319.000đ</div>
+
+                                    <a href="" class="btn btn-default app-cart">
+                                        <i class="fa fa-shopping-cart" aria-hidden="true"></i> giỏ hàng
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!---->
+                    </div>
+                </div>
+            </div>
+            <!--end hàng mới về-->
+            <!-- Hàng mới về-->
+            <div class="widget">
+                <div class="widget-title">
+                    <span class="new-title">Hàng bán chạy</span>
+                </div>
+                <div class="widget-detail">
+                    <div class="owl-widget owl-carousel owl-theme">
+                        <!-- -->
+                        <div class="item">
+                            <div class="list-product text-center">
+                                <a href="" class="wp-thumb">
+                                    <img src="images/damxoe2.jpg" alt="áo" class="img-responsive">
+                                </a>
+                                <div class="wp-pro">
+                                    <h3><a href="">Váy đầm xòe Asos</a></h3>
+                                    <div class="price">859.000đ</div>
+
+                                    <a href="" class="btn btn-default app-cart">
+                                        <i class="fa fa-shopping-cart" aria-hidden="true"></i> giỏ hàng
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!---->
+                        <div class="item">
+                            <div class="list-product text-center">
+                                <a href="" class="wp-thumb">
+                                    <img src="images/vayxoe_002.jpg" alt="áo" class="img-responsive">
+                                </a>
+                                <div class="wp-pro">
+                                    <h3><a href="">Chân váy Xòe Aoso</a></h3>
+                                    <div class="price">320.000đ</div>
+
+                                    <a href="" class="btn btn-default app-cart">
+                                        <i class="fa fa-shopping-cart" aria-hidden="true"></i> giỏ hàng
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!---->
+                        <div class="item">
+                            <div class="list-product text-center">
+                                <a href="" class="wp-thumb">
+                                    <img src="images/damsuong_002.jpg" alt="áo" class="img-responsive">
+                                </a>
+                                <div class="wp-pro">
+                                    <h3><a href="">Váy đầm suông Asos</a></h3>
+                                    <div class="price">549.000đ</div>
+
+                                    <a href="" class="btn btn-default app-cart">
+                                        <i class="fa fa-shopping-cart" aria-hidden="true"></i> giỏ hàng
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!---->
+                        <div class="item">
+                            <div class="list-product text-center">
+                                <a href="" class="wp-thumb">
+                                    <img src="images/vaybutchi_002.jpg" alt="áo" class="img-responsive">
+                                </a>
+                                <div class="wp-pro">
+                                    <h3><a href="">Chân váy bút chì Asos</a></h3>
+                                    <div class="price">319.000đ</div>
+
+                                    <a href="" class="btn btn-default app-cart">
+                                        <i class="fa fa-shopping-cart" aria-hidden="true"></i> giỏ hàng
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!---->
+                        <div class="item">
+                            <div class="list-product text-center">
+                                <a href="" class="wp-thumb">
+                                    <img src="images/aokhoac.jpg" alt="áo" class="img-responsive">
+                                </a>
+                                <div class="wp-pro">
+                                    <h3><a href="">Áo dạ vàng lửng Asos</a></h3>
+                                    <div class="price">150.000đ<span class="price2">350.000đ</span></div>
+
+                                    <a href="" class="btn btn-default app-cart">
+                                        <i class="fa fa-shopping-cart" aria-hidden="true"></i> giỏ hàng
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!---->
+                        <div class="item">
+                            <div class="list-product text-center">
+                                <a href="" class="wp-thumb">
+                                    <img src="images/aosomi_002.jpg" alt="áo" class="img-responsive">
+                                </a>
+                                <div class="wp-pro">
+                                    <h3><a href="">Áo sơ mi dáng rộng</a></h3>
+                                    <div class="price">560.000đ</div>
+
+                                    <a href="" class="btn btn-default app-cart">
+                                        <i class="fa fa-shopping-cart" aria-hidden="true"></i> giỏ hàng
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!---->
+                        <div class="item">
+                            <div class="list-product text-center">
+                                <a href="" class="wp-thumb">
+                                    <img src="images/aoni2_002.jpg" alt="áo" class="img-responsive">
+                                </a>
+                                <div class="wp-pro">
+                                    <h3><a href="">Áo nỉ thêu hình Asos</a></h3>
+                                    <div class="price">Liên hệ</div>
+
+                                    <a href="" class="btn btn-default app-cart">
+                                        <i class="fa fa-shopping-cart" aria-hidden="true"></i> giỏ hàng
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!---->
+                    </div>
+                </div>
+            </div>
+            <!--end hàng bán chạy-->
+            <div class="block-content row">
+                <div class="block-left col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                    <!-- Hàng mới về-->
+                    <div class="widget">
+                        <div class="widget-title">
+                            <span class="new-title">Nổi Bật</span>
+                        </div>
+                        <div class="widget-detail">
+                            <div class="owl-block owl-carousel owl-theme">
+                                <div class="item">
+                                    <div class="list-product text-center">
+                                        <a href="" class="wp-thumb">
+                                            <img src="images/aokhoac.jpg" alt="áo" class="img-responsive">
+                                        </a>
+                                        <div class="wp-pro">
+                                            <h3><a href="">Áo dạ vàng lửng Asos</a></h3>
+                                            <div class="price">150.000đ<span class="price2">350.000đ</span></div>
+
+                                            <a href="" class="btn btn-default app-cart">
+                                                <i class="fa fa-shopping-cart" aria-hidden="true"></i> giỏ hàng
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!---->
+                                <div class="item">
+                                    <div class="list-product text-center">
+                                        <a href="" class="wp-thumb">
+                                            <img src="images/aosomi_002.jpg" alt="áo" class="img-responsive">
+                                        </a>
+                                        <div class="wp-pro">
+                                            <h3><a href="">Áo sơ mi dáng rộng</a></h3>
+                                            <div class="price">560.000đ</div>
+
+                                            <a href="" class="btn btn-default app-cart">
+                                                <i class="fa fa-shopping-cart" aria-hidden="true"></i> giỏ hàng
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!---->
+                                <div class="item">
+                                    <div class="list-product text-center">
+                                        <a href="" class="wp-thumb">
+                                            <img src="images/aoni2_002.jpg" alt="áo" class="img-responsive">
+                                        </a>
+                                        <div class="wp-pro">
+                                            <h3><a href="">Áo nỉ thêu hình Asos</a></h3>
+                                            <div class="price">Liên hệ</div>
+
+                                            <a href="" class="btn btn-default app-cart">
+                                                <i class="fa fa-shopping-cart" aria-hidden="true"></i> giỏ hàng
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!---->
+                                <div class="item">
+                                    <div class="list-product text-center">
+                                        <a href="" class="wp-thumb">
+                                            <img src="images/dammaxi2.jpg" alt="áo" class="img-responsive">
+                                        </a>
+                                        <div class="wp-pro">
+                                            <h3><a href="">Váy đầm maxi BCBD</a></h3>
+                                            <div class="price">1.249.000đ</div>
+
+                                            <a href="" class="btn btn-default app-cart">
+                                                <i class="fa fa-shopping-cart" aria-hidden="true"></i> giỏ hàng
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- -->
+                                <div class="item">
+                                    <div class="list-product text-center">
+                                        <a href="" class="wp-thumb">
+                                            <img src="images/damxoe2.jpg" alt="áo" class="img-responsive">
+                                        </a>
+                                        <div class="wp-pro">
+                                            <h3><a href="">Váy đầm xòe Asos</a></h3>
+                                            <div class="price">859.000đ</div>
+
+                                            <a href="" class="btn btn-default app-cart">
+                                                <i class="fa fa-shopping-cart" aria-hidden="true"></i> giỏ hàng
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!---->
+                                <div class="item">
+                                    <div class="list-product text-center">
+                                        <a href="" class="wp-thumb">
+                                            <img src="images/vayxoe_002.jpg" alt="áo" class="img-responsive">
+                                        </a>
+                                        <div class="wp-pro">
+                                            <h3><a href="">Chân váy Xòe Aoso</a></h3>
+                                            <div class="price">320.000đ</div>
+
+                                            <a href="" class="btn btn-default app-cart">
+                                                <i class="fa fa-shopping-cart" aria-hidden="true"></i> giỏ hàng
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!---->
+                                <div class="item">
+                                    <div class="list-product text-center">
+                                        <a href="" class="wp-thumb">
+                                            <img src="images/damsuong_002.jpg" alt="áo" class="img-responsive">
+                                        </a>
+                                        <div class="wp-pro">
+                                            <h3><a href="">Váy đầm suông Asos</a></h3>
+                                            <div class="price">549.000đ</div>
+
+                                            <a href="" class="btn btn-default app-cart">
+                                                <i class="fa fa-shopping-cart" aria-hidden="true"></i> giỏ hàng
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!---->
+                                <div class="item">
+                                    <div class="list-product text-center">
+                                        <a href="" class="wp-thumb">
+                                            <img src="images/vaybutchi_002.jpg" alt="áo" class="img-responsive">
+                                        </a>
+                                        <div class="wp-pro">
+                                            <h3><a href="">Chân váy bút chì Asos</a></h3>
+                                            <div class="price">319.000đ</div>
+
+                                            <a href="" class="btn btn-default app-cart">
+                                                <i class="fa fa-shopping-cart" aria-hidden="true"></i> giỏ hàng
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!---->
+                            </div>
+                        </div>
+                    </div>
+                    <!--end hàng mới về-->
+                </div>
+                <div class="block-right col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                    <!-- Hàng mới về-->
+                    <div class="widget">
+                        <div class="widget-title">
+                            <span class="new-title">Bán chạy</span>
+                        </div>
+                        <div class="widget-detail">
+                            <div class="owl-block owl-carousel owl-theme">
+                                <!-- -->
+                                <div class="item">
+                                    <div class="list-product text-center">
+                                        <a href="" class="wp-thumb">
+                                            <img src="images/damxoe2.jpg" alt="áo" class="img-responsive">
+                                        </a>
+                                        <div class="wp-pro">
+                                            <h3><a href="">Váy đầm xòe Asos</a></h3>
+                                            <div class="price">859.000đ</div>
+
+                                            <a href="" class="btn btn-default app-cart">
+                                                <i class="fa fa-shopping-cart" aria-hidden="true"></i> giỏ hàng
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!---->
+                                <div class="item">
+                                    <div class="list-product text-center">
+                                        <a href="" class="wp-thumb">
+                                            <img src="images/vayxoe_002.jpg" alt="áo" class="img-responsive">
+                                        </a>
+                                        <div class="wp-pro">
+                                            <h3><a href="">Chân váy Xòe Aoso</a></h3>
+                                            <div class="price">320.000đ</div>
+
+                                            <a href="" class="btn btn-default app-cart">
+                                                <i class="fa fa-shopping-cart" aria-hidden="true"></i> giỏ hàng
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!---->
+                                <div class="item">
+                                    <div class="list-product text-center">
+                                        <a href="" class="wp-thumb">
+                                            <img src="images/damsuong_002.jpg" alt="áo" class="img-responsive">
+                                        </a>
+                                        <div class="wp-pro">
+                                            <h3><a href="">Váy đầm suông Asos</a></h3>
+                                            <div class="price">549.000đ</div>
+
+                                            <a href="" class="btn btn-default app-cart">
+                                                <i class="fa fa-shopping-cart" aria-hidden="true"></i> giỏ hàng
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!---->
+                                <div class="item">
+                                    <div class="list-product text-center">
+                                        <a href="" class="wp-thumb">
+                                            <img src="images/vaybutchi_002.jpg" alt="áo" class="img-responsive">
+                                        </a>
+                                        <div class="wp-pro">
+                                            <h3><a href="">Chân váy bút chì Asos</a></h3>
+                                            <div class="price">319.000đ</div>
+
+                                            <a href="" class="btn btn-default app-cart">
+                                                <i class="fa fa-shopping-cart" aria-hidden="true"></i> giỏ hàng
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!---->
+                                <div class="item">
+                                    <div class="list-product text-center">
+                                        <a href="" class="wp-thumb">
+                                            <img src="images/aokhoac.jpg" alt="áo" class="img-responsive">
+                                        </a>
+                                        <div class="wp-pro">
+                                            <h3><a href="">Áo dạ vàng lửng Asos</a></h3>
+                                            <div class="price">150.000đ<span class="price2">350.000đ</span></div>
+
+                                            <a href="" class="btn btn-default app-cart">
+                                                <i class="fa fa-shopping-cart" aria-hidden="true"></i> giỏ hàng
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!---->
+                                <div class="item">
+                                    <div class="list-product text-center">
+                                        <a href="" class="wp-thumb">
+                                            <img src="images/aosomi_002.jpg" alt="áo" class="img-responsive">
+                                        </a>
+                                        <div class="wp-pro">
+                                            <h3><a href="">Áo sơ mi dáng rộng</a></h3>
+                                            <div class="price">560.000đ</div>
+
+                                            <a href="" class="btn btn-default app-cart">
+                                                <i class="fa fa-shopping-cart" aria-hidden="true"></i> giỏ hàng
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!---->
+                                <div class="item">
+                                    <div class="list-product text-center">
+                                        <a href="" class="wp-thumb">
+                                            <img src="images/aoni2_002.jpg" alt="áo" class="img-responsive">
+                                        </a>
+                                        <div class="wp-pro">
+                                            <h3><a href="">Áo nỉ thêu hình Asos</a></h3>
+                                            <div class="price">Liên hệ</div>
+
+                                            <a href="" class="btn btn-default app-cart">
+                                                <i class="fa fa-shopping-cart" aria-hidden="true"></i> giỏ hàng
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!---->
+                            </div>
+                        </div>
+                    </div>
+                    <!--end hàng bán chạy-->
+                </div>
+            </div>
+            <!--block-content-->
+            <!-- Bài viết mới-->
+            <div class="widget new-post">
+                <div class="widget-title">
+                    <span class="new-title">Bài viết mới</span>
+                </div>
+                <div class="widget-detail">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                            <div class="list-product">
+                                <a href="" class="wp-thumb">
+                                    <img src="images/mua-giay-1-min.jpg" alt="áo" class="img-responsive">
+                                </a>
+                                <div class="wp-pro">
+                                    <h3><a href="">Lý do bạn cần nhớ đề ngừng mua một đôi giày</a></h3>
+                                    <div class="price date">30/09/2017</div>
+
+                                    <p>Chẳng thể dùng từ ngữ để miêu tả được tình yêu của phái đẹp với giày. Chúng ta
+                                        yêu những đôi giày của mình đến mức chỉ ngồi để...</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!---->
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                            <div class="list-product">
+                                <a href="" class="wp-thumb">
+                                    <img src="images/quan-jean-1-min.jpg" alt="áo" class="img-responsive">
+                                </a>
+                                <div class="wp-pro">
+                                    <h3><a href="">Bí quyết chọn quần jeans nữ cải thiện vòng 3</a></h3>
+                                    <div class="price date">30/09/2017</div>
+                                    <p>Nhiều người khi mặc quần jeans chỉ chú ý đến việc làm thế nào cho đùi bới to,
+                                        chân bới ngắn, Không lộ vòng kiềng... mà hoàn toàn quên...</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!---->
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                            <div class="list-product">
+                                <a href="" class="wp-thumb">
+                                    <img src="images/cong-so-1-min.jpg" alt="áo" class="img-responsive">
+                                </a>
+                                <div class="wp-pro">
+                                    <h3><a href="">Bí quyết chọn đồ công sở cho các cô nàng</a></h3>
+                                    <div class="price date">30/09/2017</div>
+                                    <p>Người ta thường nghĩ dáng nhỏ nhắn để mặc đồ. THực tế là nhiều cô gái thiết tất
+                                        thước vẫn luôn oán trách ông trời bất công. Và điều...</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!---->
+                    </div>
+                </div>
+            </div>
+            <!--end hàng bán chạy-->
+        </div>
+        <!--end content-->
+    </div>
+    <!--end wp-content-->
+    <div class="brand-logo">
+        <div class="container">
+            <div id="owl-demo" class="owl-carousel owl-theme">
+                <div class="item"><img src="images/brand1.png" alt="Owl Image" class="img-responsive"></div>
+                <div class="item"><img src="images/brand2.png" alt="Owl Image" class="img-responsive"></div>
+                <div class="item"><img src="images/brand3.png" alt="Owl Image" class="img-responsive"></div>
+                <div class="item"><img src="images/brand4.png" alt="Owl Image" class="img-responsive"></div>
+                <div class="item"><img src="images/brand5.png" alt="Owl Image" class="img-responsive"></div>
+                <div class="item"><img src="images/brand6.png" alt="Owl Image" class="img-responsive"></div>
+                <div class="item"><img src="images/brand7.png" alt="Owl Image" class="img-responsive"></div>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                    <a href="" title="Lamy" class="footer-logo"><img alt="Lamy" src="images/logo-white.png"></a>
+                    <p class="para-footer">Bạn đang tìm kiếm những mẫu thời trang, quần áo, giày dép và phụ kiện mới
+                        nhất trên mạng?
+                        Hãy mua sắm ngay hôm nay tại Lamy - website mua sắm thời trang hàng hiệu trực tuyến hàng
+                        đầu Việt Nam!
+                    </p>
+                </div>
+                <!---->
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12">
+
+                    <div class="footer-title" data-toggle="dropdown">
+                        <h3>Về chúng tôi <span class="caret pull-right"></span></h3>
+                    </div>
+                    <ul class="list-footer dropdown-menu">
+                        <li>
+                            <a href=""><i class="fa fa-angle-right" aria-hidden="true"></i> Trang chủ</a>
+                        </li>
+                        <li>
+                            <a href=""><i class="fa fa-angle-right" aria-hidden="true"></i> Giới thiệu</a>
+                        </li>
+                        <li>
+                            <a href=""><i class="fa fa-angle-right" aria-hidden="true"></i> Sản phẩm</a>
+                        </li>
+                        <li>
+                            <a href=""><i class="fa fa-angle-right" aria-hidden="true"></i> Tin tức</a>
+                        </li>
+                        <li>
+                            <a href=""><i class="fa fa-angle-right" aria-hidden="true"></i> Liên hệ</a>
+                        </li>
+                    </ul>
+                </div>
+                <!---->
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12">
+                    <div class="footer-title" data-toggle="dropdown">
+                        <h3>Thông tin <span class="caret pull-right"></span></h3>
+                    </div>
+                    <ul class="list-footer dropdown-menu">
+                        <li>
+                            <a href=""><i class="fa fa-angle-right" aria-hidden="true"></i> Quan điểm</a>
+                        </li>
+                        <li>
+                            <a href=""><i class="fa fa-angle-right" aria-hidden="true"></i> Cam kết</a>
+                        </li>
+                        <li>
+                            <a href=""><i class="fa fa-angle-right" aria-hidden="true"></i> Quy định</a>
+                        </li>
+                        <li>
+                            <a href=""><i class="fa fa-angle-right" aria-hidden="true"></i> Điều khoản</a>
+                        </li>
+                        <li>
+                            <a href=""><i class="fa fa-angle-right" aria-hidden="true"></i> Chính sách</a>
+                        </li>
+                    </ul>
+                </div>
+                <!---->
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12">
+                    <div class="footer-title" data-toggle="dropdown">
+                        <h3>Hỗ trợ <span class="caret pull-right"></span></h3>
+                    </div>
+                    <ul class="list-footer dropdown-menu">
+                        <li>
+                            <a href=""><i class="fa fa-angle-right" aria-hidden="true"></i> Tìm kiếm</a>
+                        </li>
+                        <li>
+                            <a href=""><i class="fa fa-angle-right" aria-hidden="true"></i> Hướng dẫn</a>
+                        </li>
+                        <li>
+                            <a href=""><i class="fa fa-angle-right" aria-hidden="true"></i> Đăng nhập</a>
+                        </li>
+                        <li>
+                            <a href=""><i class="fa fa-angle-right" aria-hidden="true"></i> Đăng ký</a>
+                        </li>
+                        <li>
+                            <a href=""><i class="fa fa-angle-right" aria-hidden="true"></i> Giỏ hàng</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                    <div class="footer-title">
+                        <h3>Liên hệ</h3>
+                    </div>
+                    <ul class="list-footer">
+                        <li>
+                            <i class="fa fa-map-marker" aria-hidden="true"></i>75 Phố An Dương - Tây Hồ - Hà Nội
+                        </li>
+                        <li>
+                            <i class="fa fa-phone phone-icon" aria-hidden="true"></i>0966039806
+                        </li>
+                        <li>
+                            <i class="fa fa-envelope" aria-hidden="true"></i> vuduykhuong195@gmail.com
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--end footer-->
+    <div id="copyright" class="">
+        <div class="container">
+            <p>Cung cấp bởi: <a href=""> khuongvd.com</a></p>
+        </div>
+    </div>
+    <!--end copyright-->
+</div>
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/wow.js"></script>
+<script>
+    $(document).ready(function () {
+        $(".owl-widget").owlCarousel({
+            navigation: true,
+            autoPlay: 3000,
+            items: 4,
+            itemsDesktop: [1199, 4],
+            itemsDesktopSmall: [979, 3],
+            itemsTablet: [767, 3],
+            pagination: false,
+            navigationText: ["<", ">"]
+        });
+    });
+    $("owl-block").carousel();
+</script>
+<script>
+    $(document).ready(function () {
+        $(".owl-block").owlCarousel({
+            navigation: true,
+            autoPlay: 3000,
+            items: 3,
+            itemsDesktop: [1199, 3],
+            itemsDesktopSmall: [991, 2],
+//            itemsTablet: [767, 1],
+//            itemsMobile: false,
+//            pagination: false,
+            navigationText: ["<", ">"]
+        });
+        $("#owl-demo").owlCarousel({
+            navigation: true,
+            autoPlay: 3000,
+            items: 6,
+            itemsDesktop: [1199, 6],
+            itemsDesktopSmall: [979, 4],
+            itemsTablet: [767, 4],
+            itemsMobile: [480, 3],
+            pagination: false,
+            navigationText: ["<", ">"]
+        });
+    });
+</script>
+</body>
+</html>
